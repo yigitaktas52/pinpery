@@ -38,17 +38,17 @@ export default function AdminPage() {
   return (
     <main className="min-h-screen bg-white px-6 py-10">
       <div className="max-w-md mx-auto">
-        <h1 className="text-2xl font-bold mb-6">Ürün Ekle</h1>
+        <h1 className="text-2xl font-bold mb-6 text-gray-900">Ürün Ekle</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div>
-            <label className="block text-sm font-medium mb-1">Ürün Adı</label>
+            <label className="block text-sm font-medium mb-1 text-gray-900">Ürün Adı</label>
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-              className="w-full border border-gray-300 rounded-md px-3 py-2"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 bg-white"
             />
           </div>
 
@@ -57,7 +57,7 @@ export default function AdminPage() {
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full border border-gray-300 rounded-md px-3 py-2"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 bg-white"
             >
               <option value="Ceket">Ceket</option>
               <option value="Gömlek">Gömlek</option>
@@ -66,14 +66,14 @@ export default function AdminPage() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Görsel Linki</label>
+            <label className="block text-sm font-medium mb-1 text-gray-900">Görsel Linki</label>
             <input
               type="text"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
               required
               placeholder="https://..."
-              className="w-full border border-gray-300 rounded-md px-3 py-2"
+              className="w-full border border-gray-300 rounded-md px-3 py-2 text-gray-900 bg-white"
             />
           </div>
 
